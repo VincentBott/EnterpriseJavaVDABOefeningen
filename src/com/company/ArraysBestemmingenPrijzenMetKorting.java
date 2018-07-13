@@ -37,6 +37,7 @@ public class ArraysBestemmingenPrijzenMetKorting {
 
         } while (keuze < 1 || keuze > 3);
 
+        if
         System.out.printf("Dag %s, goede reis naar %s. Dit kost je € %.2f" , naam, bestemmingen[keuze-1], prijzen[keuze-1]);
 
     }
