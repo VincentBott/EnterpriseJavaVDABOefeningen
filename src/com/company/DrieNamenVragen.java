@@ -19,6 +19,8 @@ public class DrieNamenVragen {
 
         String naam;
 
+        // Dit moet gepushed worden op Github.
+
         for (int i = 0; i <  3; i++) {
             System.out.print("Geef naam: ");
 
