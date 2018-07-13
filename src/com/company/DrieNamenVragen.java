@@ -30,5 +30,6 @@ public class DrieNamenVragen {
 
             System.out.printf("Naam: %10s\n", naam);  // souf of printf voegt niet automatisch een newline \n toe. Print/souf is ineens met String.format.
         }
+        System.out.println("Dit moet gepushed worden op Github.");
     }
 }
