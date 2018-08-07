@@ -21,7 +21,7 @@ public class KlassenNaamJoske {
 
     private static String maakBegroeting(String ingegevenNaam) {
 
-        return  "Dag " + ingegevenNaam;
+        return  "Dag " + ingegevenNaam;    //return String.format(
 
     }
 

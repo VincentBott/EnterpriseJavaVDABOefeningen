@@ -26,7 +26,7 @@ public class KlassenGetallenOmwisselen {
 
     private static void verwissel(int[] ingegevenGetallen) {
 
-        int tijdelijkeWaarde0, tijdelijkeWaarde1;
+        int tijdelijkeWaarde0, tijdelijkeWaarde1;  // Maar 1 tijdelijke variabele tmp nodig i.p.v. 2.
 
         tijdelijkeWaarde0 = ingegevenGetallen[0];
         tijdelijkeWaarde1 = ingegevenGetallen[1];
@@ -34,6 +34,7 @@ public class KlassenGetallenOmwisselen {
         ingegevenGetallen[0] = tijdelijkeWaarde1;
         ingegevenGetallen[1] = tijdelijkeWaarde0;
 
+        // Maar 1 extra variabele nodig i.p.v. 2.
     }
 
 }

@@ -21,9 +21,9 @@ public class KlassenLeeftijd {
         }
     }
 
-    private static boolean heeftToegang(int leeftijd){
+    private static boolean heeftToegang(int age){
 
-        if (leeftijd >= 18){
+        if (age >= 18){
             return true;
         }else {
             return false;
