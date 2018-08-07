@@ -10,9 +10,9 @@ public class ArrayBestemmingen {
 
         System.out.println("Kies een bestemming: ");
 
-        for (int i = 0; i < bestemmingen.length ; i++) {
+        for (int i = 0; i < bestemmingen.length ; i++)
             System.out.printf("\t%d. %s\n", (i+1), bestemmingen[i]);
 
-        }
+
     }
 }

@@ -23,7 +23,7 @@ public class ArrayBestemmingKiezen {
 
         int keuze = Integer.parseInt(scanner.nextLine());
 
-        System.out.printf("Dag %s, goede reis naar %s" , naam, bestemmingen[keuze-1]);
+        System.out.printf("Dag %s, goede reis naar %s." , naam, bestemmingen[keuze-1]);
 
     }
 }
