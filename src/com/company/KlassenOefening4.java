@@ -33,7 +33,7 @@ public class KlassenOefening4 {
         int verschil = current - previous;
 
 
-        resultaat = litre / verschil *100;
+        resultaat = litre / verschil * 100;
 
 
         return resultaat;
