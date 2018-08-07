@@ -80,9 +80,16 @@ public class NogEenOefeningOpMethoden5 {
 
         for (int i = 0; i < tekstArray.length; i++) {
 
-            if (tekstArray[i] == ' ')
-                if ((tekstArray[i+1]) == 'h')
-                    tekstArray[i+1] = ' ';
+            //   if (tekstArray[i] == ' ')
+            //    if ((tekstArray[i+1]) == 'h')
+            //       tekstArray[i+1] = ' ';
+
+            if (tekstArray[i] == 'h')
+                tekstArray[i] = ' ';
+
+            if (tekstArray[i] == 'H')
+                tekstArray[i] = ' ';
+
 
         }
         antwerps = new String(tekstArray);
