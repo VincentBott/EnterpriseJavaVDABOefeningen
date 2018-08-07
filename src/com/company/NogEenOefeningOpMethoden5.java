@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class NogEenOefeningOpMethoden5 {
 
+
     public static void main(String[] args) {
 
         String tevertalen = "Heel goed. Ik houd van goud, aha";
@@ -77,6 +78,7 @@ public class NogEenOefeningOpMethoden5 {
 
         char[] tekstArray = teVertalen.toCharArray();
 
+        char[] tekstArrayZonderOverbodigeSpaties;
 
         for (int i = 0; i < tekstArray.length; i++) {
 
@@ -90,9 +92,16 @@ public class NogEenOefeningOpMethoden5 {
             if (tekstArray[i] == 'H')
                 tekstArray[i] = ' ';
 
+        }
+        for (int i = 0; i < tekstArray.length; i++) {
+
+            if (tekstArray[i] == ' ') {
+                if tekstArray[i-1] == ' '
+
 
         }
-        antwerps = new String(tekstArray);
+
+        antwerps = new String(tekstArrayZonderOverbodigeSpaties);
 
         return antwerps;
     }
