@@ -24,7 +24,6 @@ public class NogEenOefeningOpMethoden5 {
     private static String vertaalWVL(String teVertalen) {
 
 
-
         String inHetWestVlaams;
 
         char[] tekstArray = teVertalen.toCharArray();
@@ -74,7 +73,19 @@ public class NogEenOefeningOpMethoden5 {
 
         String antwerps = "";
 
+        int positie;
 
+        char[] tekstArray = teVertalen.toCharArray();
+
+
+        for (int i = 0; i < tekstArray.length; i++) {
+
+            if (tekstArray[i] == ' ')
+                if ((tekstArray[i+1]) == 'h')
+                    tekstArray[i+1] = ' ';
+
+        }
+        antwerps = new String(tekstArray);
 
         return antwerps;
     }
