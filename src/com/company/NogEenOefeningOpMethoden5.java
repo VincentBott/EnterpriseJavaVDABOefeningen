@@ -78,7 +78,8 @@ public class NogEenOefeningOpMethoden5 {
 
         char[] tekstArray = teVertalen.toCharArray();
 
-        char[] tekstArrayZonderOverbodigeSpaties;
+        char[] tekstArrayZonderOverbodigeSpaties = tekstArray;
+
 
         for (int i = 0; i < tekstArray.length; i++) {
 
@@ -93,15 +94,24 @@ public class NogEenOefeningOpMethoden5 {
                 tekstArray[i] = ' ';
 
         }
+
         for (int i = 0; i < tekstArray.length; i++) {
 
-            if (tekstArray[i] == ' ') {
-                if tekstArray[i-1] == ' '
+            if (i == 0) {
+                if (tekstArray[i] == ' ')
+                    tekstArrayZonderOverbodigeSpaties[i - 1] = tekstArray[i + 1];
+            }
+
+            if (i > 0)
+                if (tekstArray[i] == ' ')
+                    if (tekstArray[i-1] == ' ')
+                        tekstArrayZonderOverbodigeSpaties[i-1] = tekstArray[i];
 
 
         }
 
         antwerps = new String(tekstArrayZonderOverbodigeSpaties);
+
 
         return antwerps;
     }

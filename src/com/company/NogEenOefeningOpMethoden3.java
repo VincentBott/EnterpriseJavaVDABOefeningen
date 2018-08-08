@@ -35,7 +35,6 @@ public class NogEenOefeningOpMethoden3 {
             anderwoord = anderwoord + ingegevenWoord.charAt(i);
 
 
-
         if (ingegevenWoord.equalsIgnoreCase(anderwoord))
             return true;
         else
