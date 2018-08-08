@@ -119,20 +119,22 @@ public class NogEenOefeningOpMethoden5 {
 */
 
 
-        String resultaat = "";
+        String inHetAntwerps = "";
 
         boolean vorigeIsSpatie = true;
+
 
         for (int i = 0; i < teVertalen.length(); i++) {
 
             if (!(vorigeIsSpatie && (teVertalen.charAt(i) == 'h' || teVertalen.charAt(i) == 'H'))){
-                resultaat += teVertalen.charAt(i);
+
+                inHetAntwerps += teVertalen.charAt(i);
             }
 
             vorigeIsSpatie = teVertalen.charAt(i) == ' ';
         }
 
-        return resultaat;
+        return inHetAntwerps;
 
     }
 
