@@ -72,6 +72,7 @@ public class NogEenOefeningOpMethoden5 {
 
     private static String vertaalAnt(String teVertalen) {
 
+/*
         String antwerps = "";
 
         int positie;
@@ -114,6 +115,25 @@ public class NogEenOefeningOpMethoden5 {
 
 
         return antwerps;
+
+*/
+
+
+        String resultaat = "";
+
+        boolean vorigeIsSpatie = true;
+
+        for (int i = 0; i < teVertalen.length(); i++) {
+
+            if (!(vorigeIsSpatie && (teVertalen.charAt(i) == 'h' || teVertalen.charAt(i) == 'H'))){
+                resultaat += teVertalen.charAt(i);
+            }
+
+            vorigeIsSpatie = teVertalen.charAt(i) == ' ';
+        }
+
+        return resultaat;
+
     }
 
 
